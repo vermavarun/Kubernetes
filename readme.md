@@ -37,10 +37,26 @@ To get IP address
 
 <hr/>
 <h2>Docker Cheet Sheet</h2>
+<li>docker ps<l/i>
 
 <hr/>
 <h2>Kubernetes Cheet Sheet</h2>
 <h3>Namespaces</h3>
 <li>kubectl create namespace {insert-namespace-name-here} </li>
 <li>kubectl config set-context --current --namespace=my-namespace</li>
+
+
+<hr/>
+<h1>Latest update</h1>
+
+To create API and UI running 
+    
+    ./k8-create.sh
+
+Visit [API](http://localhost:80) and [UI](http://localhost:8081) in browser
+
+
+To Delete API and UI  
+    
+    ./k8-delete.sh
 
