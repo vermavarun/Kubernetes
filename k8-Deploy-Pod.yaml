@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: docker-dotnet-pod
-spec:
-  containers:
-  - image: vermavarun/docker-dotnet
-    name: docker-dotner-container

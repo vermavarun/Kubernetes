@@ -2,11 +2,11 @@
 <h2>Docker</h2>
 To Build
 
-`docker build -t docker-dotnet .`
+    `docker build -t docker-dotnet .`
 
 To Run
 
-`docker run -d -p 8080:80 --name docker-dotnet-app vermavarun/docker-dotnet`
+    `docker run -d -p 8080:80 --name docker-dotnet-app vermavarun/docker-dotnet`
 
 Now Visit
 
@@ -17,11 +17,19 @@ Now Visit
 
 To Apply K8s Deployment for WebApi Pod
 
-`kubectl apply -f k8-Deploy-Pod.yaml`
+    `kubectl apply -f k8-Deploy-Pod.yaml`
 
 To Apply K8s Deployment for pod+service
 
-`kubectl apply -f k8-Deploy-pod-service.yaml -n dotnet-docker`
+    `kubectl apply -f k8-Deploy-pod-service.yaml -n dotnet-docker`
+
+OR
+
+    `kubectl apply -f k8-pod.yaml -n dotnet-docker`
+
+    `kubectl apply -f k8-service.yaml -n dotnet-docker`
+
+And Visit <a href="http://localhost/weatherforecast"> Localhost </a>
 
 To get IP address
 
