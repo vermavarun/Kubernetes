@@ -10,6 +10,6 @@ spec:
     - port: 80
       targetPort: 80
       protocol: TCP
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     service: ms-api

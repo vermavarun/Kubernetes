@@ -44,19 +44,21 @@ To get IP address
 <h3>Namespaces</h3>
 <li>kubectl create namespace {insert-namespace-name-here} </li>
 <li>kubectl config set-context --current --namespace=my-namespace</li>
+<li>kubectl config view | grep namespace</li>
+<li>kubectl set env deployment/react-ui REACT_APP_API_URL=http://10.97.38.222/</li>
+<li>kubectl get svc</li> // to get ip of api service
 
 
 <hr/>
 <h1>Latest update</h1>
 
-To create API and UI running 
-    
-    ./k8-create.sh
+To create API and UI running
 
-Visit [API](http://localhost:80) and [UI](http://localhost:8081) in browser
+    ./create.sh
+
+Visit [UI](http://localhost:1234) in browser
 
 
-To Delete API and UI  
-    
-    ./k8-delete.sh
+To Delete API and UI
 
+    ./delete.sh

@@ -1,14 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import Calculator from "./components/calculator/calculator";
+import TopBar from "./components/topbar/topbar";
+import Footer from "./components/footer/footer";
+import { useEffect } from "react";
+
+
+function App({ instance }) {
   return (
-    <div className="App">
-      <header className="App-header">
-       I am a UI App. Thanks!
-      </header>
-    </div>
+      <MainContent />
   );
 }
 
 export default App;
+
+const MainContent = () => {
+
+  let activeAccount;
+
+  return (
+    <>
+    <TopBar activeAccount={activeAccount} />
+
+      <div className="App">
+        <Calculator />
+      </div>
+      <Footer />
+    </>
+
+
+  );
+};
