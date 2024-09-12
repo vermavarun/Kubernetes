@@ -20,11 +20,13 @@ spec:
           image: theapplication:ui
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 5000
+            - containerPort: 5001
               protocol: TCP
           env:
             - name: REACT_APP_API_URL
               value: http://localhost:3000
+            - name: PORT
+              value: "5001"
           resources:
             limits:
               memory: 512Mi
