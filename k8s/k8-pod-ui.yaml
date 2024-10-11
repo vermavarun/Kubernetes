@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: react-ui
-          image: theapplication:ui
+          #image: theapplication:ui
+          image: invvggregistry.azurecr.io/theapplication:ui
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5001
@@ -36,6 +37,7 @@ spec:
               cpu: "0.2"
         - name: node-api
           image: theapplication:nodeapi
+          #image: invvggregistry.azurecr.io/theapplication:nodeapi
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000

@@ -18,6 +18,7 @@ spec:
       containers:
         - name: ms-api
           image: theapplication:api
+          #image: invvggregistry.azurecr.io/theapplication:api
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
