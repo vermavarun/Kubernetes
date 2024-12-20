@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: react-ui
-          #image: theapplication:ui
-          image: invvggregistry.azurecr.io/theapplication:ui
+          image: theapplication:ui
+          #image: invvggregistry.azurecr.io/theapplication:ui
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5001
