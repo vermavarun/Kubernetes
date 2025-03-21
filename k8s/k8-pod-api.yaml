@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: ms-api
-          image: theapplication:api
+          image: vermavarun/theapplication:api
           #image: invvggregistry.azurecr.io/theapplication:api
           imagePullPolicy: IfNotPresent
           ports:

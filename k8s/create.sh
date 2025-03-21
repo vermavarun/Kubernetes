@@ -1,6 +1,6 @@
-docker build -t theapplication:ui ../ui
-docker build -t theapplication:api ../dotnet
-docker build -t theapplication:nodeapi ../node/api
+docker build -t vermavarun/theapplication:ui ../ui
+docker build -t vermavarun/theapplication:api ../dotnet
+docker build -t vermavarun/theapplication:nodeapi ../node/api
 
 kubectl describe ns the-application || kubectl create namespace the-application
 
